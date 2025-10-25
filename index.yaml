@@ -53,6 +53,48 @@ entries:
               url: https://github.com/oauth2-proxy/manifests/pull/361
     apiVersion: v2
     appVersion: 7.12.0
+    created: "2025-10-25T18:27:54.756205688Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts
+      version: 4.35.0
+    description: A reverse proxy that provides authentication with Google, Github
+      or other providers
+    digest: e6660419df67c9262f011b518bcd27c880478673c13374cf3a0572292ac4b9f3
+    home: https://oauth2-proxy.github.io/oauth2-proxy/
+    keywords:
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    - redis
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: pierluigi.lenoci@gmail.com
+      name: pierluigilenoci
+    - email: jan@larwig.com
+      name: tuunit
+    - email: joel.speed@hotmail.co.uk
+      name: JoelSpeed
+    name: oauth2-proxy
+    sources:
+    - https://github.com/oauth2-proxy/oauth2-proxy
+    - https://github.com/oauth2-proxy/manifests
+    urls:
+    - https://github.com/BacLuc/oauth2-proxy-helm/releases/download/oauth2-proxy-8.3.2-2/oauth2-proxy-8.3.2-2.tgz
+    version: 8.3.2-2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Bump Redis Chart Version
+          links:
+            - name: Github PR
+              url: https://github.com/oauth2-proxy/manifests/pull/361
+    apiVersion: v2
+    appVersion: 7.12.0
     created: "2025-10-25T18:13:37.77879445Z"
     dependencies:
     - condition: redis-ha.enabled
@@ -8551,4 +8593,4 @@ entries:
     urls:
     - https://github.com/oauth2-proxy/manifests/releases/download/oauth2-proxy-3.2.6/oauth2-proxy-3.2.6.tgz
     version: 3.2.6
-generated: "2025-10-25T18:13:37.779378081Z"
+generated: "2025-10-25T18:27:54.757062399Z"
