@@ -477,7 +477,7 @@ redis:
   #
   # If you want to use redis in sentinel mode see:
   # https://artifacthub.io/packages/helm/dandydev-charts/redis-ha#redis-sentinel-parameters
-
+redisEnabled: false
 # Enables apiVersion deprecation checks
 checkDeprecation: true
 
