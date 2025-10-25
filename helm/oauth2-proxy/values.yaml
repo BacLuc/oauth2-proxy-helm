@@ -459,7 +459,7 @@ sessionStorage:
       # - "redis://127.0.0.1:8001"
 
 # Enables and configure the automatic deployment of the redis-ha subchart
-redis:
+redis-ha:
   # provision an instance of the redis-ha sub-chart
   enabled: false
   # Redis specific helm chart settings, please see:
@@ -477,7 +477,7 @@ redis:
   #
   # If you want to use redis in sentinel mode see:
   # https://artifacthub.io/packages/helm/dandydev-charts/redis-ha#redis-sentinel-parameters
-
+redisEnabled: false
 # Enables apiVersion deprecation checks
 checkDeprecation: true
 
